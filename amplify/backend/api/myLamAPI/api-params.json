@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/woohoo",
+      "lambdaFunction": "myLamAPIFunc",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/woohoo"
+    }
+  ],
+  "resourceName": "myLamAPI",
+  "apiName": "myLamAPI",
+  "functionArns": [
+    {
+      "lambdaFunction": "myLamAPIFunc"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-mylamapi-dev-113748-authRole",
+    "unAuthRoleName": "amplify-mylamapi-dev-113748-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "myLamAPIFunc",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
